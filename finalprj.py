@@ -14,7 +14,6 @@ class MyWindow(QDialog, form_class):
         self.length = len(self.string) + 1
         self.memory = ['0' for i in range(int(self.data[1]))]
         self.recently = ['0' for i in range(int(self.data[1]))]
-        # self.frequently = [0 for i in range(int(self.data[2]))]
         self.frequently = {i: 0 for i in range(int(self.data[2]) + 1)}
         self.page_absence = [True for i in range(self.length)]
         self.setWindowTitle('Virtual Storage Management')
